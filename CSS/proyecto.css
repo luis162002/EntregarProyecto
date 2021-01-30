@@ -131,6 +131,9 @@ main#principal #primera-seccion { /* (Quise hacerla tipo overplay pero necesitab
 #oferta {
     width: 100%;
 }
+#oferta a {
+  text-decoration: none;
+}
       
 #oferta a:hover {
     cursor: pointer;
@@ -203,9 +206,13 @@ main#contactos {
     text-align: left;
     clear: left;
   } 
-main#contactos p {
+main#contactos section div p {
     padding-left: 30px;
   }
+  main#contactos section div p a {
+    text-decoration: none;
+  }
+ 
 main#contactos h1 {
     padding-left: 5px;
   }
@@ -213,10 +220,32 @@ main#contactos img {
     padding: 10px;
   }
 /* Fin pagina Contacto */
+/* Comienzo pagina Todos los productos */
+
+main#todosproductos section{
+  width: 100%;
+  text-align: center;
+}
+main#todosproductos section h1 {
+  font-size: 2em;
+  padding: 5px;
+}
+main#todosproductos section div {
+  width: 49%;
+  float: left;
+}
+main#todosproductos section div p a {
+  text-decoration: none;
+}
+main#todosproductos section div p a:hover {
+  background-color: rgba(1,0,0,0.3);
+  cursor: pointer;
+}
+
+/* Fin pagina Todos los productos */
 /*------------------------------------------------------------------------*/
 /* @media editions version tablet?¿ */
-
-/* Cabecera Empieza "Comun en todas"*/
+/* Cabecera */
 @media (max-width:768px){ /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
 
     header label { /* Quitamos el display none por el block, patra mostrarlos en bloque */
@@ -246,8 +275,8 @@ main#contactos img {
     }
   }
 /* Cabecera Fin */
+/* Pagina Principal */
 
-/* Primera Seccion */
 @media (max-width:768px) {/*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
     main#principal #primera-seccion { /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
       width: 100%;
@@ -262,9 +291,7 @@ main#contactos img {
     width: 100%;
     }
   }
-/* Primera Seccion Fin
 
-/* Segunda Seccion */
 @media (max-width:768px){ /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
   
     main#principal { /*Cambie el width de 60% a 100% el resto es igual que la version grande */
@@ -292,7 +319,6 @@ main#contactos img {
         margin: 5px;
       }
   } 
-/* Segunda Seccion Fin */
 
 /*Empieza aside "Pagina Principal"*/
 @media (max-width:768px){
@@ -301,5 +327,17 @@ main#contactos img {
     }
   }
 /* Termina aside */
+/* Termina Pagina Principal */
+
+/* Pagina todos los productos */
+main#todosproductos section{
+  width: 100%;
+  text-align: center;
+}
+main#todosproductos section div {
+  width: 48%;
+  float: left;
+}
+/* fin Pagina todos los productos */
 
 /* @media editions Fin */
