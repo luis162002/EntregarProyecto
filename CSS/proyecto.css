@@ -249,6 +249,15 @@ main#aceit section {
   float:left;
   margin: 3px;
 }
+main#aceit h1 {
+  text-align: center;
+}
+main#aceit section a {
+  text-decoration: none;
+}
+main#aceit section a:hover {
+  background-color:rgba(0,0,0,0.3)
+}
 
 /* fin el producto aceites */
 /*------------------------------------------------------------------------*/
