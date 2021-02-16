@@ -365,4 +365,10 @@ main#todosproductos section div {
 }
 /* fin Pagina todos los productos */
 
+/* Empieza producto->Aceites */
+main#aceit section article{ /* Cambie la anchura del 33% a 48%*/
+  width: 48%;
+}
+/* Fin producto->Aceites */
+
 /* @media editions Fin */
