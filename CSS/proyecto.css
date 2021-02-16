@@ -382,7 +382,7 @@ main#boller section article img { /* Le baje un 30% al tamaño original de la im
 
 /* Pagina todos los productos */
 main#todosproductos section{
-  width: 48%;
+  width: 100%;
   text-align: center;
 }
 main#todosproductos section div {
