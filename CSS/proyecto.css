@@ -382,7 +382,7 @@ main#boller section article img { /* Le baje un 30% al tamaño original de la im
 
 /* Pagina todos los productos */
 main#todosproductos section{
-  width: 100%;
+  width: 48%;
   text-align: center;
 }
 main#todosproductos section div {
@@ -398,5 +398,12 @@ main#aceit section article{ /* Cambie la anchura del 33% a 48%*/
 }
 }
 /* Fin producto->Aceites */
+/* Empieza producto->Bolleria */
+@media (max-width:768px){
+  main#boller section article{ /* Cambie la anchura del 33% a 48%*/
+    width: 48%;
+  }
+  }
+  /* Fin producto->Bolleria */
 
 /* @media editions Fin */
