@@ -266,8 +266,34 @@ main#aceit section a { /* Quite la decoracion de los links y le puse un color de
 main#aceit section a:hover { /* Color de fondo transparente */
   background-color:rgba(0,0,0,0.3)
 }
-
 /* fin el producto aceites */
+
+/* Empieza el producto Bolleria */
+main#boller section { /* alineare centrado, y margen de 3px */
+  text-align: center;
+  margin: 3px;
+}
+
+main#boller section article img { /* Le baje un 30% al tamaño original de la imagen */
+  width: 70%;
+  }
+  main#boller section article{ /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
+    background-color: #ffffff;
+    float: left;
+    margin: 1px;
+    width: 33%;
+  }
+  main#boller h1 { /* Alinee el texto centrado */
+    text-align: center;
+  }
+  main#boller section a { /* Quite la decoracion de los links y le puse un color de fondo rgba */
+    text-decoration: none;
+    background-color: rgba(0,1,1,0.5);
+  }
+  main#boller section a:hover { /* Color de fondo transparente */
+    background-color:rgba(0,0,0,0.3)
+  }
+/* Fin de el producto Bolleria */
 /*------------------------------------------------------------------------*/
 /* @media editions version tablet?¿ */
 /* Cabecera */
