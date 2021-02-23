@@ -294,6 +294,35 @@ main#boller section article img { /* Le baje un 30% al tamaño original de la im
     background-color:rgba(0,0,0,0.3)
   }
 /* Fin de el producto Bolleria */
+/* Empieza el producto carnes */
+main#carnic section { /* alineare centrado, y margen de 3px */
+  text-align: center;
+  margin: 3px;
+}
+
+main#carnic section article img { /* Le baje un 30% al tamaño original de la imagen */
+  width: 70%;
+  }
+  main#carnic section article{ /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
+    background-color: #ffffff;
+    float: left;
+    margin: 1px;
+    width: 33%;
+  }
+  main#carnic h1 { /* Alinee el texto centrado */
+    text-align: center;
+  }
+  main#carnic section a { /* Quite la decoracion de los links y le puse un color de fondo rgba */
+    text-decoration: none;
+    background-color: rgba(0,1,1,0.5);
+  }
+  main#carnic section a:hover { /* Color de fondo transparente */
+    background-color:rgba(0,0,0,0.3)
+  }
+  main#carnic section h2 {
+    clear: both;
+  }
+/* Fin de el producto carnes */
 /*------------------------------------------------------------------------*/
 /* @media editions version tablet?¿ */
 /* Cabecera */
@@ -405,5 +434,12 @@ main#aceit section article{ /* Cambie la anchura del 33% a 48%*/
   }
   }
   /* Fin producto->Bolleria */
+  /* Empieza producto->carnes */
+@media (max-width:768px){
+  main#carnic section article{ /* Cambie la anchura del 33% a 48%*/
+    width: 48%;
+  }
+  }
+  /* Fin producto->carnes */
 
 /* @media editions Fin */
