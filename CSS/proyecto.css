@@ -49,6 +49,9 @@ body { /* Poner la tipografia y un color de fondo */
     text-align: center;
     border: 1px solid #00000D;
   }
+  .menu li:hover { /* Al pasar por encima de el menu el la opcion, que aumente el tamaño de su contenedor*/
+    flex-grow: 1.5;
+  }
   /*-----------------------------------Queria añadir un submenu pero nolo di mostrado asi que primer contratiempo.
   .menu ul li #submenu {
       display:none;
