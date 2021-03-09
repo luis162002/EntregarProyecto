@@ -264,108 +264,108 @@ main section a:hover {
 /* @media editions version tablet?¿ */
 /* Cabecera */
 @media (max-width: 768px) {
-    /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
-  
-    header label {
-      /* Quitamos el display none por el block, patra mostrarlos en bloque */
-      display: block;
-    }
-    .menu {
-      /* Posicionamos absolutamente y ponemos color de fondo, margin -70 para que no aparezca en pantalla y mostrarlo al hacer click en el menu*/
-      position: absolute;
-      width: 70%;
-      margin-left: -70%;
-      transition: all 1s;
-    }
-  
-    .menu ul {
-      /* Posicionamos absolutamente y ponemos color de fondo */
-      flex-direction: column;
-    }
-    .menu li {
-      /* Añadir un borde */
-      border-top: 1px solid black;
-    }
-    .menu li a {
-      /* Quitar la decoracion de los links, añadirle color de letra y ponerle padding */
-      padding: 15px 40px;
-      color: #00000d;
-      text-decoration: none;
-    }
-  
-    #responsive_menu:checked ~ .menu {
-      /* Cuando al icono este checekd buscara asta encontrar la clase menu, Que es la clase que oculte antes con -70*/
-      margin: 0;
-    }
-    /* Cabecera Fin */
-    /* Pagina Principal */
-    main#principal #primera-seccion {
-      /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
-      width: 100%;
-      background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      font-style: italic;
-      text-decoration: violet;
-      font-size: 15px;
-    }
-    #oferta {
-      /* Que coja el ancho total */
-      width: 100%;
-    }
-  
-    main#principal {
-      /*Cambie el width de 60% a 100% el resto es igual que la version grande */
-      font-family: monospace;
-      width: 100%;
-      margin-top: 30px;
-      text-align: center;
-      padding: 1px;
-    }
-    main#principal #segunda-seccion .imagenes-sec2 {
-      /* Dar ancho/alto a las imagenes y posicionarlas estaticamente */
-      width: 200px;
-      height: 147px;
-      position: static;
-      top: 10px;
-      left: -40px;
-    }
-    main#principal #segunda-seccion {
-      /* Ponerles una tipografia distinta */
-      font-family: monospace;
-      font-size: 15px;
-    }
-    section div {
-      /* Ubicar los div */
-      padding-top: 5px;
-      vertical-align: middle;
-      margin: 5px;
-    }
-  
-    /*Empieza aside "Pagina Principal"*/
-    aside {
-      /* Ocultar el menu con las Categorias */
-      display: none;
-    }
-    /* Termina aside */
-    /* Termina Pagina Principal */
-  
-    /* Pagina todos los productos */
-    main#todosproductos section {
-      width: 100%;
-      text-align: center;
-    }
-    main#todosproductos section div {
-      width: 48%;
-      float: left;
-    }
-    /* fin Pagina todos los productos */
-  
-    /* Empieza producto */
-    main section article {
-      /* Cambie la anchura del 33% a 48%*/
-      width: 47%;
-    }
-    /* Fin producto */
+  /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
+
+  header label {
+    /* Quitamos el display none por el block, patra mostrarlos en bloque */
+    display: block;
   }
-  /* @media editions Fin */
+  .menu {
+    /* Posicionamos absolutamente y ponemos color de fondo, margin -70 para que no aparezca en pantalla y mostrarlo al hacer click en el menu*/
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 1s;
+  }
+
+  .menu ul {
+    /* Posicionamos absolutamente y ponemos color de fondo */
+    flex-direction: column;
+  }
+  .menu li {
+    /* Añadir un borde */
+    border-top: 1px solid black;
+  }
+  .menu li a {
+    /* Quitar la decoracion de los links, añadirle color de letra y ponerle padding */
+    padding: 15px 40px;
+    color: #00000d;
+    text-decoration: none;
+  }
+
+  #responsive_menu:checked ~ .menu {
+    /* Cuando al icono este checekd buscara asta encontrar la clase menu, Que es la clase que oculte antes con -70*/
+    margin: 0;
+  }
+  /* Cabecera Fin */
+  /* Pagina Principal */
+  main#principal #primera-seccion {
+    /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
+    width: 100%;
+    background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-style: italic;
+    text-decoration: violet;
+    font-size: 15px;
+  }
+  #oferta {
+    /* Que coja el ancho total */
+    width: 100%;
+  }
+
+  main#principal {
+    /*Cambie el width de 60% a 100% el resto es igual que la version grande */
+    font-family: monospace;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 1px;
+  }
+  main#principal #segunda-seccion .imagenes-sec2 {
+    /* Dar ancho/alto a las imagenes y posicionarlas estaticamente */
+    width: 200px;
+    height: 147px;
+    position: static;
+    top: 10px;
+    left: -40px;
+  }
+  main#principal #segunda-seccion {
+    /* Ponerles una tipografia distinta */
+    font-family: monospace;
+    font-size: 15px;
+  }
+  section div {
+    /* Ubicar los div */
+    padding-top: 5px;
+    vertical-align: middle;
+    margin: 5px;
+  }
+
+  /*Empieza aside "Pagina Principal"*/
+  aside {
+    /* Ocultar el menu con las Categorias */
+    display: none;
+  }
+  /* Termina aside */
+  /* Termina Pagina Principal */
+
+  /* Pagina todos los productos */
+  main#todosproductos section {
+    width: 100%;
+    text-align: center;
+  }
+  main#todosproductos section div {
+    width: 48%;
+    float: left;
+  }
+  /* fin Pagina todos los productos */
+
+  /* Empieza producto */
+  main section article {
+    /* Cambie la anchura del 33% a 48%*/
+    width: 47%;
+  }
+  /* Fin producto */
+}
+/* @media editions Fin */
