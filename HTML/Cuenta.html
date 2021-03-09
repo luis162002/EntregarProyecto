@@ -6,102 +6,109 @@
 <!--
 
 -->
-    <head>
-        <title>Proyecto Web</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width"/>
-		    <link href="../CSS/proyecto.css" rel="stylesheet" type="text/css" media="screen"/>
-    </head>
-    <body>
-      <header><!-- Iniciamos Cabecera -->
-        <input type="checkbox" id="responsive_menu">
-        <label for="responsive_menu"><img src="../imagenes/iconos/menu.png" alt="IconoMenu" id="IconoMenu"/></label>
-        <nav class="menu"> 
 
-          <ul class="navegacion">
-				    <li><a href="principal.html">Inicio</a></li>
-				    <li><a href="Cuenta.html">Cuenta</a> <!--
+<head>
+  <title>Proyecto Web</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="../CSS/proyecto.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+  <header>
+    <!-- Iniciamos Cabecera -->
+    <input type="checkbox" id="responsive_menu">
+    <label for="responsive_menu"><img src="../imagenes/iconos/menu.png" alt="IconoMenu" id="IconoMenu" /></label>
+    <nav class="menu">
+
+      <ul class="navegacion">
+        <li><a href="principal.html">Inicio</a></li>
+        <li><a href="Cuenta.html">Cuenta</a>
+          <!--
 					    <ul id="submenu">
 						  <li><a href="">Crear</a></li>
 						  <li><a href="">Inicia sesion</a></li>
 					    </ul> -->
-				    </li>
-				    <li><a href="Contacto.html">Contacto</a></li>
-				    <li><a href="Todos-los-Productos.html">Todos los Productos</a></li>
-          </ul>
-        </nav>  
+        </li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li><a href="Todos-los-Productos.html">Todos los Productos</a></li>
+      </ul>
+    </nav>
 
-       
-        <img src="../imagenes/cabecera/pulpo_cabecera.png" alt="Imagen de cabecera pulpo" id="imgcabecera" />
-      </header> <!-- Se cierra cabecera -->
-      <main id="cuenta">
-        <form action="cuentas.html" method="get">
-		
-          <fieldset>
-            <legend>Identificate</legend>
-              <p>
-                <label for="nombre">Nombre </label>
-                <input obligatorio="on" type="text" name="nombre" id="nombre" maxlength=10/>
-              </p>
-              
-              <p>
-                <label for="apellidos" >Apellidos</label>
-                <input obligatorio="on" type="text" name="apellidos" id="apellidos" maxlength=50 />
-              </p>
-              
-              <p>
-                <label>Provincia </label>
-                
-                <select id="provincia" name="provincia">
-                
-                  <option value="" selected="selected">- selecciona -</option>
-                  
-                  <option value="Lugo" >- Lugo -</option>
-                  
-                  <option value="Meira" >- Meira -</option>
-                  
-                  <option value="Foz" >- Foz -</option>
-                  
-                  <option value="Barreiros" >- Barreiros -</option>
-                </select>
-              </p>
-              <p>
-                <label for="correo" >Correo electronico</label>
-                <input obligatorio="on" type="email" name="email" id="email" maxlength=50 />
-              </p>
-            
-          </fieldset>
-            
-          <fieldset>
-            <legend>Datos de la cuenta</legend>
-              <p>
-                <label for="nombre">Nombre de Usuario(10 Max)</label>
-                <input obligatorio="on" type="text" name="nombre_usuario" id="nombre_usuario" maxlength=10/>
-              </p>
-              
-              <p>
-                <label for="contrasinal">Contraseña</label>
-                <input type="password" name="contraseña1" id="contraseña1" size="10" maxlength="10"/>
-              </p>
-              
-              <p>
-                <label for="contrasinal">Repite la Contraseña</label>
-                <input type="password" name="contraseña2" id="contraseña2" size="10" maxlength="10"/>
-                
-              </p>
-              
-          </fieldset>
-          <fieldset>
-            <p></p>
-              <input type="reset" name="limpar" value="Borrar datos"/>
-              <input type="button" name="crear" value="Crear Cuenta"/>
-          </fieldset>
-        </form>
-      </main>
-      <footer><!-- Pie de Pag -->
-        <p>Copyright © 2020 DISGARI LUGO ,TODOS LOS DERECHOS RESERVADOS</p>
-        <p>Creditos Jose Gato Rodriguez, Fundador de DISGARI Dristribuiciones </p>
-        <p>Created for Luis Fernando Mejia </p>
-      </footer> <!--End  Pie de Pag -->
-    </body>
+
+    <img src="../imagenes/cabecera/pulpo_cabecera.png" alt="Imagen de cabecera pulpo" id="imgcabecera" />
+  </header> <!-- Se cierra cabecera -->
+  <main id="cuenta">
+    <form action="cuentas.html" method="get">
+
+      <fieldset>
+        <legend>Identificate</legend>
+        <p>
+          <label for="nombre">Nombre </label>
+          <input obligatorio="on" type="text" name="nombre" id="nombre" maxlength=10 />
+        </p>
+
+        <p>
+          <label for="apellidos">Apellidos</label>
+          <input obligatorio="on" type="text" name="apellidos" id="apellidos" maxlength=50 />
+        </p>
+
+        <p>
+          <label>Provincia </label>
+
+          <select id="provincia" name="provincia">
+
+            <option value="" selected="selected">- selecciona -</option>
+
+            <option value="Lugo">- Lugo -</option>
+
+            <option value="Meira">- Meira -</option>
+
+            <option value="Foz">- Foz -</option>
+
+            <option value="Barreiros">- Barreiros -</option>
+          </select>
+        </p>
+        <p>
+          <label for="correo">Correo electronico</label>
+          <input obligatorio="on" type="email" name="email" id="email" maxlength=50 />
+        </p>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos de la cuenta</legend>
+        <p>
+          <label for="nombre">Nombre de Usuario(10 Max)</label>
+          <input obligatorio="on" type="text" name="nombre_usuario" id="nombre_usuario" maxlength=10 />
+        </p>
+
+        <p>
+          <label for="contrasinal">Contraseña</label>
+          <input type="password" name="contraseña1" id="contraseña1" size="10" maxlength="10" />
+        </p>
+
+        <p>
+          <label for="contrasinal">Repite la Contraseña</label>
+          <input type="password" name="contraseña2" id="contraseña2" size="10" maxlength="10" />
+
+        </p>
+
+      </fieldset>
+      <fieldset>
+        <p></p>
+        <input type="reset" name="limpar" value="Borrar datos" />
+        <input type="button" name="crear" value="Crear Cuenta" />
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <!-- Pie de Pag -->
+    <p>Copyright © 2020 DISGARI LUGO ,TODOS LOS DERECHOS RESERVADOS</p>
+    <p>Creditos Jose Gato Rodriguez, Fundador de DISGARI Dristribuiciones </p>
+    <p>Created for Luis Fernando Mejia </p>
+  </footer>
+  <!--End  Pie de Pag -->
+</body>
+
 </html>
