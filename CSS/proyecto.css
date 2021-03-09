@@ -9,7 +9,6 @@ body {
   background-size: cover;
   font-size: 14px;
 }
-
 /* Menu Cabecera */
 #imgcabecera {
   width: 100%;
@@ -24,7 +23,7 @@ header {
   width: 100%;
 }
 #responsive_menu {
-  /* Ocultar los efectos visuales que tiene el inputo por defecto El checbox */
+  /* Ocultar los efectos visuales que tiene el input por defecto El checbox */
   display: none;
 }
 header label {
@@ -58,13 +57,8 @@ header label:hover {
 }
 .menu li:hover {
   /* Al pasar por encima de el menu el la opcion, que aumente el tamaño de su contenedor*/
-  flex-grow: 1.5;
+  flex-grow: 1.1;
 }
-/*-----------------------------------Queria añadir un submenu pero nolo di mostrado asi que primer contratiempo.
-  .menu ul li #submenu {
-      display:none;
-  }
-  -------------------------------------*/
 .menu li:hover {
   /*Al pasar con el raton por encima que se vuelva transparente*/
   background-color: rgba(1, 0, 0, 0.3);
@@ -80,37 +74,6 @@ header label:hover {
   text-decoration: none;
   font-size: 1.6em;
 }
-
-/* Añadir estilo a las migas de pan 
-  ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-  }*/
-
-/* Quitar los efectos visuales de las listas
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 12px;
-  }*/
-
-/* Añadir un simbolo "/" para separar las migas de pan
-  ul.breadcrumb li:before {
-    padding: 8px;
-    color: #0026ff;
-    content: "/\00a0";
-  }*/
-
-/* Añadir colores a los links y quitar su decoracion
-  ul.breadcrumb li a {
-    text-decoration: none;
-  }*/
-
-/* Resaltar al pasar con el raton
-  ul.breadcrumb li a:hover {
-    color: #000000;
-    text-decoration: underline;
-  }*/
-
 /* Footer(pie) */
 footer {
   /* Color de fond alinee en el centro y le puse distinta tipografia, limpiar el float y un pequeño padding and margin */
@@ -123,7 +86,7 @@ footer {
   border: #4a3c00 solid 1px;
 }
 /* Fin de Comun en todas las paginas */
-/* -------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Pagina Principal */
 main#principal {
   /* Añadir un ancho , un margen por arriba, alinearlo y que flote a la izquierda */
@@ -181,8 +144,6 @@ main#principal section div {
   display: inline-table;
   width: 28%;
 }
-
-/* Comienzo del aside pag principal */
 aside {
   /* Hacerle flotar a la derecha, poner padding/margin, un borde y posicionarlo estatico */
   float: right;
@@ -205,10 +166,9 @@ aside {
   color: #00000d;
   text-decoration: none;
 }
-/* Fin del aside */
 /* Fin de la Pagina Principal */
-/*------------------------------------------------------------------------*/
-/*--- Pagina Cuenta ---*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/*--- Comienzo Pagina Cuenta ---*/
 main#cuenta {
   width: 100%;
 }
@@ -221,7 +181,7 @@ main#cuenta form fieldset legend {
   border: 1px solid #4a3c00;
 }
 /* Fin Pagina Cuenta */
-/*------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Comienzo pagina Contacto */
 main#contactos {
   width: 100%;
@@ -242,8 +202,8 @@ main#contactos img {
   padding: 10px;
 }
 /* Fin pagina Contacto */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Comienzo pagina Todos los productos */
-
 main#todosproductos section {
   width: 100%;
   text-align: center;
@@ -263,225 +223,149 @@ main#todosproductos section div p a:hover {
   background-color: rgba(1, 0, 0, 0.3);
   cursor: pointer;
 }
-/* Fin pagina Todos los productos */
-/* Empieza el producto aceites */
-main#aceit section {
-  /* alineare centrado, y margen de 3px */
-  text-align: center;
-  margin: 3px;
-}
-main#aceit section article img {
-  /* Le baje un 30% al tamaño original de la imagen */
-  width: 70%;
-}
-main#aceit section article {
-  /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
-  background-color: #ffffff;
-  float: left;
-  margin: 1px;
-  width: 33%;
-}
-main#aceit h1 {
-  /* Alinee el texto centrado */
-  text-align: center;
-}
-main#aceit section a {
-  /* Quite la decoracion de los links y le puse un color de fondo rgba */
-  text-decoration: none;
-  background-color: rgba(0, 1, 1, 0.5);
-}
-main#aceit section a:hover {
-  /* Color de fondo transparente */
-  background-color: rgba(0, 0, 0, 0.3);
-}
-/* fin el producto aceites */
-
-/* Empieza el producto Bolleria */
-main#boller section {
-  /* alineare centrado, y margen de 3px */
-  text-align: center;
-  margin: 3px;
-}
-
-main#boller section article img {
-  /* Le baje un 30% al tamaño original de la imagen */
-  width: 70%;
-}
-main#boller section article {
-  /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
-  background-color: #ffffff;
-  float: left;
-  margin: 1px;
-  width: 33%;
-}
-main#boller h1 {
-  /* Alinee el texto centrado */
-  text-align: center;
-}
-main#boller section a {
-  /* Quite la decoracion de los links y le puse un color de fondo rgba */
-  text-decoration: none;
-  background-color: rgba(0, 1, 1, 0.5);
-}
-main#boller section a:hover {
-  /* Color de fondo transparente */
-  background-color: rgba(0, 0, 0, 0.3);
-}
-/* Fin de el producto Bolleria */
-/* Empieza el producto carnes */
-main#carnic section {
-  /* alineare centrado, y margen de 3px */
-  text-align: center;
-  margin: 3px;
-}
-
-main#carnic section article img {
-  /* Le baje un 30% al tamaño original de la imagen */
-  width: 70%;
-}
-main#carnic section article {
-  /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
-  background-color: #ffffff;
-  float: left;
-  margin: 1px;
-  width: 33%;
-}
-main#carnic h1 {
-  /* Alinee el texto centrado */
-  text-align: center;
-}
-main#carnic section a {
-  /* Quite la decoracion de los links y le puse un color de fondo rgba */
-  text-decoration: none;
-  background-color: rgba(0, 1, 1, 0.5);
-}
-main#carnic section a:hover {
-  /* Color de fondo transparente */
-  background-color: rgba(0, 0, 0, 0.3);
-}
-main#carnic section h2 {
+.clearboth {
   clear: both;
 }
-/* Fin de el producto carnes */
-/*------------------------------------------------------------------------*/
+/* Fin pagina Todos los productos */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Empieza Comun en todos los productos*/
+main section {
+  /* alineare centrado, y margen de 3px */
+  text-align: center;
+  margin: 3px;
+}
+main section article img {
+  /* Le baje un 30% al tamaño original de la imagen */
+  width: 70%;
+}
+main section article {
+  /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
+  background-color: #ffffff;
+  float: left;
+  margin: 1px;
+  width: 33%;
+}
+main h1 {
+  /* Alinee el texto centrado */
+  text-align: center;
+}
+main section a {
+  /* Quite la decoracion de los links y le puse un color de fondo rgba */
+  text-decoration: none;
+  background-color: rgba(0, 1, 1, 0.5);
+}
+main section a:hover {
+  /* Color de fondo transparente */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* fin Comun en todos los productos*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* @media editions version tablet?¿ */
 /* Cabecera */
 @media (max-width: 768px) {
-  /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
-
-  header label {
-    /* Quitamos el display none por el block, patra mostrarlos en bloque */
-    display: block;
+    /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
+  
+    header label {
+      /* Quitamos el display none por el block, patra mostrarlos en bloque */
+      display: block;
+    }
+    .menu {
+      /* Posicionamos absolutamente y ponemos color de fondo, margin -70 para que no aparezca en pantalla y mostrarlo al hacer click en el menu*/
+      position: absolute;
+      width: 70%;
+      margin-left: -70%;
+      transition: all 1s;
+    }
+  
+    .menu ul {
+      /* Posicionamos absolutamente y ponemos color de fondo */
+      flex-direction: column;
+    }
+    .menu li {
+      /* Añadir un borde */
+      border-top: 1px solid black;
+    }
+    .menu li a {
+      /* Quitar la decoracion de los links, añadirle color de letra y ponerle padding */
+      padding: 15px 40px;
+      color: #00000d;
+      text-decoration: none;
+    }
+  
+    #responsive_menu:checked ~ .menu {
+      /* Cuando al icono este checekd buscara asta encontrar la clase menu, Que es la clase que oculte antes con -70*/
+      margin: 0;
+    }
+    /* Cabecera Fin */
+    /* Pagina Principal */
+    main#principal #primera-seccion {
+      /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
+      width: 100%;
+      background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      font-style: italic;
+      text-decoration: violet;
+      font-size: 15px;
+    }
+    #oferta {
+      /* Que coja el ancho total */
+      width: 100%;
+    }
+  
+    main#principal {
+      /*Cambie el width de 60% a 100% el resto es igual que la version grande */
+      font-family: monospace;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+      padding: 1px;
+    }
+    main#principal #segunda-seccion .imagenes-sec2 {
+      /* Dar ancho/alto a las imagenes y posicionarlas estaticamente */
+      width: 200px;
+      height: 147px;
+      position: static;
+      top: 10px;
+      left: -40px;
+    }
+    main#principal #segunda-seccion {
+      /* Ponerles una tipografia distinta */
+      font-family: monospace;
+      font-size: 15px;
+    }
+    section div {
+      /* Ubicar los div */
+      padding-top: 5px;
+      vertical-align: middle;
+      margin: 5px;
+    }
+  
+    /*Empieza aside "Pagina Principal"*/
+    aside {
+      /* Ocultar el menu con las Categorias */
+      display: none;
+    }
+    /* Termina aside */
+    /* Termina Pagina Principal */
+  
+    /* Pagina todos los productos */
+    main#todosproductos section {
+      width: 100%;
+      text-align: center;
+    }
+    main#todosproductos section div {
+      width: 48%;
+      float: left;
+    }
+    /* fin Pagina todos los productos */
+  
+    /* Empieza producto */
+    main section article {
+      /* Cambie la anchura del 33% a 48%*/
+      width: 47%;
+    }
+    /* Fin producto */
   }
-  .menu {
-    /* Posicionamos absolutamente y ponemos color de fondo, margin -70 para que no aparezca en pantalla y mostrarlo al hacer click en el menu*/
-    position: absolute;
-    width: 70%;
-    margin-left: -70%;
-    transition: all 1s;
-  }
-
-  .menu ul {
-    /* Posicionamos absolutamente y ponemos color de fondo */
-    flex-direction: column;
-  }
-  .menu li {
-    /* Añadir un borde */
-    border-top: 1px solid black;
-  }
-  .menu li a {
-    /* Quitar la decoracion de los links, añadirle color de letra y ponerle padding */
-    padding: 15px 40px;
-    color: #00000d;
-    text-decoration: none;
-  }
-
-  #responsive_menu:checked ~ .menu {
-    /* Cuando al icono este checekd buscara asta encontrar la clase menu, Que es la clase que oculte antes con -70*/
-    margin: 0;
-  }
-  /* Cabecera Fin */
-  /* Pagina Principal */
-  main#principal #primera-seccion {
-    /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
-    width: 100%;
-    background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    font-style: italic;
-    text-decoration: violet;
-    font-size: 15px;
-  }
-  #oferta {
-    /* Que coja el ancho total */
-    width: 100%;
-  }
-
-  main#principal {
-    /*Cambie el width de 60% a 100% el resto es igual que la version grande */
-    font-family: monospace;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-    padding: 1px;
-  }
-  main#principal #segunda-seccion .imagenes-sec2 {
-    /* Dar ancho/alto a las imagenes y posicionarlas estaticamente */
-    width: 200px;
-    height: 147px;
-    position: static;
-    top: 10px;
-    left: -40px;
-  }
-  main#principal #segunda-seccion {
-    /* Ponerles una tipografia distinta */
-    font-family: monospace;
-    font-size: 15px;
-  }
-  section div {
-    /* Ubicar los div */
-    padding-top: 5px;
-    vertical-align: middle;
-    display: inline-table;
-    margin: 5px;
-  }
-
-  /*Empieza aside "Pagina Principal"*/
-  aside {
-    /* Ocultar el menu con las Categorias */
-    display: none;
-  }
-  /* Termina aside */
-  /* Termina Pagina Principal */
-
-  /* Pagina todos los productos */
-  main#todosproductos section {
-    width: 100%;
-    text-align: center;
-  }
-  main#todosproductos section div {
-    width: 48%;
-    float: left;
-  }
-  /* fin Pagina todos los productos */
-
-  /* Empieza producto->Aceites */
-  main#aceit section article {
-    /* Cambie la anchura del 33% a 48%*/
-    width: 48%;
-  }
-  /* Fin producto->Aceites */
-  /* Empieza producto->Bolleria */
-  main#boller section article {
-    /* Cambie la anchura del 33% a 48%*/
-    width: 48%;
-  }
-  /* Fin producto->Bolleria */
-  /* Empieza producto->carnes */
-  main#carnic section article {
-    /* Cambie la anchura del 33% a 48%*/
-    width: 48%;
-  }
-  /* Fin producto->carnes */
-}
-/* @media editions Fin */
+  /* @media editions Fin */
