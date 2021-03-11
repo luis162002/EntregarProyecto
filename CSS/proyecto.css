@@ -58,9 +58,6 @@ header label:hover {
 .menu li:hover {
   /* Al pasar por encima de el menu el la opcion, que aumente el tamaño de su contenedor*/
   flex-grow: 1.1;
-}
-.menu li:hover {
-  /*Al pasar con el raton por encima que se vuelva transparente*/
   background-color: rgba(1, 0, 0, 0.3);
 }
 .menu li {
@@ -215,6 +212,9 @@ main#todosproductos section h1 {
 main#todosproductos section div {
   width: 49%;
   float: left;
+}
+main#todosproductos section div img {
+  width: 45%;
 }
 main#todosproductos section div p a {
   text-decoration: none;
