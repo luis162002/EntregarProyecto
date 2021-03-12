@@ -10,8 +10,16 @@ body {
   font-size: 14px;
 }
 /* Menu Cabecera */
-#imgcabecera {
-  width: 100%;
+div#imgcabecera {
+  height: 60vh;
+  background-image: url(../imagenes/cabecera/pulpo_cabecera.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div#imgcabecera:hover {
+  background-image: url(../imagenes/cabecera/plpindiver.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 img #IconoMenu {
   width: 30px;
@@ -96,16 +104,24 @@ main#principal {
 main#principal #primera-seccion {
   /* (Quise hacerla tipo overplay pero necesitaba js y no se usarlo) Ponerle un ancho, poner imagen de fondo, posicionarla,ponerle borde */
   width: 100%;
+  height: 500px;
   background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   font-style: italic;
   text-decoration: violet;
   font-size: 17px;
   border: #4a3c00 solid 1px;
+  margin: 3px;
 }
 #oferta {
   width: 100%;
+  font-size: 1.9em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#oferta:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 #oferta a {
   text-decoration: none;
