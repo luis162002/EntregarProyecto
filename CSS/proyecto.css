@@ -119,7 +119,6 @@ main#principal #primera-seccion {
   background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border:2px rgba(0, 0, 0, 0.9) solid;
 }
 #oferta a {
   text-decoration: none;
