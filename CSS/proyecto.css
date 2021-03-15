@@ -7,7 +7,7 @@ body {
   background-image: url(../imagenes/image/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 14px;
+  font-size: 2.8vh;
 }
 /* Menu Cabecera */
 div#imgcabecera {
@@ -214,65 +214,77 @@ main#contactos img {
 /* Fin pagina Contacto */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Comienzo pagina Todos los productos */
-main#todosproductos section {
-  width: 100%;
-  text-align: center;
+main#todosproductos section{
+ width: 95%;
 }
 main#todosproductos section h1 {
-  font-size: 2em;
-  padding: 5px;
+  text-align: center;
 }
 main#todosproductos section div {
-  width: 49%;
-  float: left;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap:wrap;
+ text-align: center;
 }
-main#todosproductos section div img {
-  width: 45%;
+main#todosproductos section div div {
+  width: 30%;
+  margin: 1px;
+  padding: 1px;
 }
-main#todosproductos section div p a {
-  text-decoration: none;
+main#todosproductos section div div p {
+  width: 98%;
+  background-color: white;
 }
-main#todosproductos section div p a:hover {
-  background-color: rgba(1, 0, 0, 0.3);
-  cursor: pointer;
+main#todosproductos section div div p img{
+  width:95%
 }
-.clearboth {
-  clear: both;
+main#todosproductos section div div p a {
+ font-size: 5vh;
+ background-color: rgba(0, 0, 0, 0.3);
+ text-decoration: none;
 }
+main#todosproductos section div div p a:hover {
+  background-color: blue;
+  color:white;
+}
+
 /* Fin pagina Todos los productos */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Empieza Comun en todos los productos*/
-main section {
-  /* alineare centrado, y margen de 3px */
+main#aceit section,main#boller section,main#carnic section,main#lact section,main#maris section {
   text-align: center;
   margin: 3px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-main section article img {
+main#aceit section article img,main#boller section article img,main#carnic section article img,main#lact section article img,main#maris section article img {
   /* Le baje un 30% al tamaño original de la imagen */
   width: 70%;
 }
-main section article {
+main#aceit section article,main#boller section article,main#carnic section article,main#lact section article,main#maris section article {
   /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
   background-color: #ffffff;
-  float: left;
   margin: 1px;
   width: 33%;
 }
-main h1 {
+main#aceit h1,main#boller h1,main#carnic h1,main#lact h1,main#maris h1 {
   /* Alinee el texto centrado */
   text-align: center;
 }
-main section a {
+main#aceit section a,main#boller section a,main#carnic section a,main#lact section a,main#maris section a {
   /* Quite la decoracion de los links y le puse un color de fondo rgba */
   text-decoration: none;
   background-color: rgba(0, 1, 1, 0.5);
 }
-main section a:hover {
+main#aceit section a:hover ,main#boller section a:hover ,main#carnic section a:hover ,main#lact section a:hover ,main#maris section a:hover {
   /* Color de fondo transparente */
   background-color: rgba(0, 0, 0, 0.3);
 }
-h5 {
-  font-size: 2em;
+main#aceit h2,main#boller h2,main#carnic h2,main#lact h2,main#maris h2 {
+text-align: center;
 }
 
 /* fin Comun en todos los productos*/
@@ -369,11 +381,9 @@ h5 {
   /* Pagina todos los productos */
   main#todosproductos section {
     width: 100%;
-    text-align: center;
   }
-  main#todosproductos section div {
+  main#todosproductos section div div {
     width: 48%;
-    float: left;
   }
   /* fin Pagina todos los productos */
 
