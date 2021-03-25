@@ -203,6 +203,8 @@ main#contactos section div p {
 }
 main#contactos section div p a {
   text-decoration: none;
+  color: #363696;
+  border-bottom: 1px solid;
 }
 
 main#contactos h1 {
@@ -246,8 +248,8 @@ main#todosproductos section div div p a {
  color: #00000d;
 }
 main#todosproductos section div div p a:hover {
-  background-color: blue;
-  color:white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:black;
 }
 
 /* Fin pagina Todos los productos */
