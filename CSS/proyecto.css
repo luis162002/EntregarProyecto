@@ -246,6 +246,7 @@ main#todosproductos section div div p a {
  background-color: rgba(0, 0, 0, 0.1);
  text-decoration: none;
  color: #00000d;
+ border-radius: 10px;
 }
 main#todosproductos section div div p a:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -282,6 +283,7 @@ main#aceit section a,main#boller section a,main#carnic section a,main#lact secti
   /* Quite la decoracion de los links y le puse un color de fondo rgba */
   text-decoration: none;
   background-color: rgba(0, 1, 1, 0.1);
+  border-radius: 10px;
 }
 main#aceit section a:hover ,main#boller section a:hover ,main#carnic section a:hover ,main#lact section a:hover ,main#maris section a:hover {
   /* Color de fondo transparente */
