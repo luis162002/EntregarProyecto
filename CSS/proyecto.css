@@ -11,6 +11,7 @@ body {
 }
 /* Menu Cabecera */
 div#imgcabecera {
+  width: 100%;
   height: 60vh;
   background-image: url(../imagenes/cabecera/pulpo_cabecera.png);
   background-repeat: no-repeat;
@@ -24,6 +25,8 @@ img #IconoMenu {
 header {
   /* El header ponerle un ancho */
   width: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  margin-bottom: 30px;
 }
 #responsive_menu {
   /* Ocultar los efectos visuales que tiene el input por defecto El checbox */
@@ -42,7 +45,11 @@ header label:hover {
   cursor: pointer; /* cuando al pasar el cursor por el icono el simbolito de raton cambie a una manito */
   background-color: rgba(0, 0, 0, 0.3);
 }
-
+.menu {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(160, 148, 148, 0.5);
+}
 .menu ul {
   /* quitar estilos de las tablas y hacer que los links sean flexibles y los coloque en fila */
   margin: 0;
@@ -63,14 +70,11 @@ header label:hover {
   flex-grow: 1.1;
   background-color: rgba(1, 0, 0, 0.3);
 }
-.menu li {
-  background-color: rgba(0, 1, 1, 0.5);
-}
 .menu li a {
   /*Padding de x=30px y=50px y ponerlos en bloque*/
   display: block;
   padding: 30px 50px;
-  color: #00000d;
+  color: #0a0a0a;
   text-decoration: none;
   font-size: 1.6em;
 }
@@ -134,9 +138,6 @@ main#principal #segunda-seccion .imagenes-sec2 {
   /* le doy alto y ancho a las images, posicion statica y las acomode un poco y un borde transparente */
   width: 200px;
   height: 147px;
-  position: static;
-  top: 10px;
-  left: -40px;
 }
 
 main#principal #segunda-seccion {
@@ -146,7 +147,7 @@ main#principal #segunda-seccion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
+  flex-wrap: nowrap;
 }
 main#principal section div.cajas_peques {
   /* Ubicar un poco el div para que se parescan entre si y ponerles un ancho mx */
@@ -240,8 +241,9 @@ main#todosproductos section div div p img{
 }
 main#todosproductos section div div p a {
  font-size: 5vh;
- background-color: rgba(0, 0, 0, 0.3);
+ background-color: rgba(0, 0, 0, 0.1);
  text-decoration: none;
+ color: #00000d;
 }
 main#todosproductos section div div p a:hover {
   background-color: blue;
@@ -250,7 +252,7 @@ main#todosproductos section div div p a:hover {
 
 /* Fin pagina Todos los productos */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-/* Empieza Comun en todos los productos*/
+/* Empieza Comun en todos los productos "separados"*/
 main#aceit section,main#boller section,main#carnic section,main#lact section,main#maris section {
   text-align: center;
   margin: 3px;
@@ -258,6 +260,7 @@ main#aceit section,main#boller section,main#carnic section,main#lact section,mai
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 main#aceit section article img,main#boller section article img,main#carnic section article img,main#lact section article img,main#maris section article img {
   /* Le baje un 30% al tamaño original de la imagen */
@@ -276,7 +279,7 @@ main#aceit h1,main#boller h1,main#carnic h1,main#lact h1,main#maris h1 {
 main#aceit section a,main#boller section a,main#carnic section a,main#lact section a,main#maris section a {
   /* Quite la decoracion de los links y le puse un color de fondo rgba */
   text-decoration: none;
-  background-color: rgba(0, 1, 1, 0.5);
+  background-color: rgba(0, 1, 1, 0.1);
 }
 main#aceit section a:hover ,main#boller section a:hover ,main#carnic section a:hover ,main#lact section a:hover ,main#maris section a:hover {
   /* Color de fondo transparente */
@@ -316,7 +319,6 @@ text-align: center;
   .menu li a {
     /* Quitar la decoracion de los links, añadirle color de letra y ponerle padding */
     padding: 15px 40px;
-    color: #00000d;
     text-decoration: none;
   }
 
@@ -328,17 +330,18 @@ text-align: center;
   /* Pagina Principal */
   main#principal #primera-seccion {
     /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
-    width: 100%;
+    width: 85%;
     background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
     background-repeat: no-repeat;
     background-position: center;
     font-style: italic;
     text-decoration: violet;
     font-size: 15px;
+    margin: 0 auto;
   }
   #oferta {
     /* Que coja el ancho total */
-    width: 100%;
+    width: 90%;
   }
 
   main#principal {
