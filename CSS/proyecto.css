@@ -29,7 +29,7 @@ header {
   margin-bottom: 30px;
 }
 #responsive_menu {
-  /* Ocultar los efectos visuales que tiene el input por defecto El checbox */
+  /* Ocultar el checbox */
   display: none;
 }
 header label {
@@ -82,7 +82,7 @@ header label:hover {
 footer {
   /* Color de fond alinee en el centro y le puse distinta tipografia, limpiar el float y un pequeño padding and margin */
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family:Courier, monospace;
   padding: 10px;
   margin-top: 10px;
   width: 100%;
@@ -108,21 +108,13 @@ main#principal #primera-seccion {
   background-size: cover;
   font-style: italic;
   text-decoration: violet;
-  font-size: 17px;
   margin: 3px;
-  display: flex;
-  justify-content: center;
+  text-align:center;
 }
 #oferta {
   width: 70%;
   font-size: 1.8em;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-#oferta:hover{
-  background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #oferta a {
   text-decoration: none;
